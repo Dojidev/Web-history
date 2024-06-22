@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  
+}
+
+body {
+  background: radial-gradient(circle, rgba(212,212,212,1) 0%, rgba(211,211,212,1) 63%, rgba(187,195,204,1) 100%);
+
+}
+
+/*-- header/ navigation--*/
+.header {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 1), rgba(4, 9, 30, 0.7)),
+    url(images/utevekling\ background.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 2% 4%;
+    
+}
+
+nav img {
+  padding-left: 0;
+  width: 100px;
+}
+
+.nav-link {
+  flex: 1;
+  text-align: right;
+}
+.nav-link ul li a:hover {
+    transition: 0.5s;
+    border-radius: 10px;
+    color: #a7abb0;
+  }
+
+.nav-link ul {
+  justify-content: center;
+}
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+ }
+
+.intro h1{
+  font-size: 50px;
+  padding: 10px; 
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/*--- main ---*/
+
+main h2, p {
+  line-height: 1.22;
+  padding-bottom: 16px;
+}
+
+main section{
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 20px;
+}
+  
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 10px;
+  max-width: 940px;
+  min-height: 0px;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "SMGsans", "helvetica", "arial", sans-serif;
+ 
+
+}
+
+.quote {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px ;
+}
+
+main article .origin-1,
+.origin-2,
+.first-use,
+.the-beginning,
+.introduction,
+.read-more, 
+.growth {
+  text-align: left;
+  background-color: rgb(177, 179, 191);
+  padding: 20px;
+ 
+}
+
+main article .figure-1 {
+  background-color: rgb(177, 179, 191);
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  
+  margin: 20px auto;
+}
+
+main article .figure-1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.figure-1 details {
+  text-align: left; 
+  
+}
+
+.figure-1 details p {
+  padding: 10px 30px;
+}
+
+main article .invention,
+.network,
+.difference {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+main article .invention ul {
+ padding-left: 20px;
+}
+main article .invention li{
+  padding-left: 0px;
+}
+
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.images {
+  background-color: #333;
+  margin-top: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+
+.images section h2 {
+  padding: 20px 30px;
+  color: #fff;
+}
+
+.images p {
+  padding: 0px 30px;
+  color: #fff;
+  min-width: 350px;
+  max-width: 600px;
+}
+
+
+
+
+.slider {
+  background-color: #333;
+}
+
+.w3-content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+ 
+ 
+}
+
+.w3-content img {
+  margin: auto;
+  padding: 10px;
+  object-fit: contain;
+  
+}
+
+.slider-btn{
+  text-align: center;
+  padding: 0px 10px 10px;
+  
+}
+
+.difference img {
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote {
+  padding: 25px;
+  content: close-quote;
+  content: open-quote;
+}
+
+blockquote span {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.read-more ul {
+  padding-left: 20px;
+}
+.read-more ul li {
+  margin-bottom: 15px
+}
+
+.top {
+  margin-top: 10px;
+  text-align: end;
+  display: flex;
+  background-color: rgba(177, 179, 191, 0.9);
+  justify-content: end;
+  align-items: center;
+  align-content: center;
+}
+
+.top img {
+  padding: 1px;
+}
+
+.top a {
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+}
+
+.read-more a{
+  color: currentColor ;
+  text-decoration: none;
+
+}
+.read-more a :hover{
+  color: #000000;
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  background: radial-gradient(
+    circle,
+    rgba(72, 99, 186, 1) 0%,
+    rgba(41, 43, 45, 1) 100%
+  );
+  display: block;
+  bottom: 0%;
+  padding: 10px;
+}
+
+section footer h4 {
+  font-size: 25;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/*--- Midium screen---*/
+@media (max-width:920px) {
+  article {
+    padding: 10px;
+  }
+}
+
+main article .figure-1 {
+  height: auto;
+}
+
+/*--- Small screen---*/
+@media (max-width: 450px) {
+  .intro h1{
+    font-size: 25px;
+  }
+  
+  main h2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 20px;
+  }
+   
+  figure img {
+    width: 350px;
+  }
+
+  article .ursprung-2 p {
+    padding: 10px;
+  }
+
+  main article .invention,
+  .network,
+  .difference {
+    padding: 15px;
+    margin: 20px 0;
+  }
+
+  blockquote {
+    padding: 15px;
+  }
+
+
+
+  .w3-content{
+    width: 40vh;
+    height: auto;
+    margin: auto;
+    
+
+  }
+  .w3-content img {
+    width: 350px;
+    height: 350px;
+    padding: 30px;
+
+
+  }
+}

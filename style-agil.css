@@ -1,0 +1,279 @@
+
+* {
+    margin: 0;
+    padding: 0;
+   
+   
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background: radial-gradient(circle, rgba(211,212,212,1) 0%, rgba(211,211,212,1) 63%, rgba(187,195,204,1) 100%);
+
+}
+
+    /*-- header/ navigation--*/
+.header { 
+    min-height: 100vh;
+    width: 100%;    
+    background-image:linear-gradient( rgb(53, 55, 63),  rgba(14, 16, 25, 0.7)),url(images/Agil.jpg);   
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+ 
+}
+
+nav {
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav img {
+    width: 100px;
+    padding-left: 0;
+
+}
+
+.nav-link {
+    flex: 1;
+    text-align: right;
+
+}
+.nav-link ul li :hover{
+    transition: 0.5s;
+    border-radius: 10px;    
+    color: #a7abb0 ;
+}
+      
+
+
+.nav-link ul {
+    justify-content: center;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+    text-decoration: none;
+
+}
+
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+.intro {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    }
+
+.intro h1 {
+    font-size: 50px;
+
+   
+}
+
+.intro .intro-p {
+    font-size: 15px;
+    margin: 1px 0 30px;
+    padding-top: 10px;
+     
+}
+
+
+
+
+/*---- main style------*/
+
+main article {
+    display: flex;
+    flex-direction: column;     
+    border-radius: 8px;
+    margin: auto;
+    max-width: 960px;
+    font-size: 16px;
+   
+    
+}
+
+
+
+main article section{
+    padding: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+main article .summry{
+    font-size: 16px;
+    margin-bottom: 30; 
+    border-radius: 8px;
+    border: 1px solid;
+
+    
+}
+main h2, h3, p{
+    padding-bottom: 16px;
+}
+
+.summry{
+    margin-top: 20px;
+}
+
+
+.what-is-agile, .agil-principle{
+    background-color: #a7abb0;
+    border-radius: 8px;
+}
+
+figure img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+article ul, ol {
+    padding: 16px;
+    padding-top: 0px;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+/*---- fotter------*/
+.top {
+    margin-top: 10px;
+    text-align: end;
+    display: flex;
+    background-color: rgba(177, 179, 191, 0.9);
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .top img {
+    padding: 1px;
+  }
+  
+  .top a {
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+  }
+  
+  footer {
+    text-align: center;
+    background: radial-gradient(
+      circle,
+      rgba(72, 99, 186, 1) 0%,
+      rgba(41, 43, 45, 1) 100%
+    );
+    display: block;
+    bottom: 0%;
+    padding: 10px;
+  }
+  
+  section footer h4 {
+    font-size: 25;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  footer a{
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    
+  }
+.agil-principle img{
+    width: 24px;
+    width: 24px;
+}
+.agil-principle a{
+    text-align: center;
+    text-decoration: none;
+    color: #0a0a23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+
+
+
+/*---- Small screen ------*/
+@media(max-width: 920px){ 
+    .intro h1 {
+        font-size: 30px;
+        text-align: center;
+    
+       
+    }
+    
+    main article {
+
+        flex-direction: column;
+        margin: 5px;
+        width: unset;
+        align-content: space-between;
+    }
+    figure{
+        margin: auto;
+        padding: 0px;
+    
+        
+    }
+  
+}
+/*---- Small screen ------*/
+@media(max-width: 412px){ 
+    .intro h1 {
+        font-size: 30px;
+        text-align: center;
+    
+       
+    }
+    
+    main article {
+        flex-direction: column;
+        margin: 5px;
+        width: unset;
+        align-content: space-between;
+    }
+    figure{
+        margin: auto;
+        padding: 0px;
+    
+        
+    }
+  
+}

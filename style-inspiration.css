@@ -1,0 +1,226 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   
+}
+
+body{
+    background: radial-gradient(circle, rgba(211,212,212,1) 0%, rgba(211,211,212,1) 63%, rgba(187,195,204,1) 100%);
+
+}
+
+    /*-- header/ navigation--*/
+.header { 
+    min-height: 100vh;
+    width: 100%;    
+    background-image:linear-gradient( rgb(53, 55, 63),  rgba(14, 16, 25, 0.7)),url(images/inspiration1.jpg);   
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+ 
+}
+
+nav {
+    display: flex;
+    padding: 2% 4%;
+    align-items: center;
+    
+}
+
+nav img {
+    width: 100px;
+    padding-left: 0;
+
+}
+
+.nav-link {
+    flex: 1;
+    text-align: right;
+
+}
+.nav-link ul li :hover{
+    transition: 0.5s;
+    border-radius: 10px;    
+    color: #a7abb0 ;
+}
+      
+
+
+.nav-link ul {
+    justify-content: center;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+    text-decoration: none;
+
+}
+
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+.intro {
+    width: 500px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center; 
+ 
+
+
+
+
+}
+
+.intro h1 {
+    font-size: 50px;
+   
+
+   
+}
+
+.intro .intro-p {
+    font-size: 15px;
+    margin: 1px 0 30px;
+    padding-top: 10px;
+     
+}
+
+
+
+
+/*---- main style------*/
+
+main article {     
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 960px;       
+    font-size: 16px;
+    font-family: "SMGsans", "helvetica", "arial", sans-serif;
+       
+      
+}
+.about{
+    padding-left: 15px;
+   
+}
+main .fact{  
+    display: flex;
+    justify-content: center;
+    align-content: center;   
+    padding: 15px;
+    background-color: #a7abb0;
+    margin:  15px auto;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 8px;
+    
+}
+article img{
+ 
+     height: auto;
+}
+main h1{
+    font-size: 40px;
+}
+main .short-info{
+    font-size: large;
+    padding-bottom: px;
+}
+.about p{
+    padding-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- fotter------*/
+.top {
+    margin-top: 10px;
+    text-align: end;
+    display: flex;
+    background-color: rgba(177, 179, 191, 0.9);
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .top img {
+    padding: 1px;
+  }
+  
+  .top a {
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+  }
+  
+  footer {
+    text-align: center;
+    background: radial-gradient(
+      circle,
+      rgba(72, 99, 186, 1) 0%,
+      rgba(41, 43, 45, 1) 100%
+    );
+    display: block;
+    bottom: 0%;
+    padding: 10px;
+  }
+  
+  section footer h4 {
+    font-size: 25;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  footer a{
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    
+  }
+
+/*---- Small screen  landscape------*/
+@media(max-width: 920px){ 
+     
+    main .fact{
+        flex-direction: row;
+        margin: 5px;
+        width: unset;
+    }   
+}
+
+
+/*---- Small screen ------*/
+@media(max-width: 412px){ 
+    main .fact{
+        flex-direction: column;
+        margin: 0px;
+        
+    }
+   
+  
+}
